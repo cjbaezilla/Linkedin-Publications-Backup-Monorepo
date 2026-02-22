@@ -14,6 +14,7 @@
 10. [Advanced Techniques and Optimization](#part-9-advanced-techniques-and-optimization)
 11. [Getting Started and Next Steps](#part-10-getting-started-and-next-steps)
 
+![Document Cover](./2.jpg)
 ---
 
 ## Why This Guide Exists
@@ -108,6 +109,7 @@ Anyone who finds themselves repeating the same instructions to an AI over and ov
 
 The concept is genuinely universal. The implementation varies slightly depending on which AI platform you use, but the underlying principle remains the same everywhere: capture your knowledge once, apply it automatically whenever relevant.
 
+![AI Agent Skills Overview](./1.jpg)
 ---
 
 ## Part 2: Creating Your First Skill
@@ -347,6 +349,7 @@ It's the difference between having an entire reference library in your head and 
 
 This design also means you can keep building out your skill library without worrying about performance degradation. Whether you have 5 skills or 50, the agent only engages with the ones that match your current needs.
 
+![Skills Library Overview](./3.jpg)
 ---
 
 ## Part 3: The SKILL.md File in Depth
@@ -637,6 +640,7 @@ This is important to understand: including a reference file doesn't mean it's al
 
 This design keeps the default load lightweight while still making comprehensive resources available. You get the best of both worlds: fast activation with deep resources on demand.
 
+![Resource Loading Diagram](./4.jpg)
 ---
 
 ## Part 4: Setting Up Skills on Your Platform
