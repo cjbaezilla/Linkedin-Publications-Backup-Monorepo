@@ -10,4 +10,6 @@ https://www.linkedin.com/in/carlos-baeza-negroni/
 
 ## Articles & Pieces
 
+- **[Vibe Coding Your First API: How We Built LaunchPad API in Days](./Vibe_Coding_Your_First_API_How_We_Built_LaunchPad_API_in_Days)** — A detailed walkthrough of building a production‑ready API with CodeIgniter 4 and Shield, written for founders who want to ship backend functionality without hiring developers.
+
 - **[Understanding AI Agent Skills: A Comprehensive Guide](./Understanding_AI_Agent_Skills_A_Comprehensive_Guide)** — A deep dive into what makes AI agents work, including their core capabilities, training methods, and real-world applications.
