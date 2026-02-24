@@ -1,8 +1,8 @@
 # Vibe2Wizard - From Vibe Coder to Onchain Wizard: The Gamified Web3 & Solidity Mastery Platform
 
-![Cover](./1.jpg)
+![Cover](./1.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rZDsbkWI6hM" frameborder="0" allowfullscreen></iframe>
+[![From Vibe Coder to Onchain Wizard: The Gamified Web3 & Solidity Mastery Platform](http://img.youtube.com/vi/rZDsbkWI6hM/0.jpg)](http://www.youtube.com/watch?v=rZDsbkWI6hM "From Vibe Coder to Onchain Wizard: The Gamified Web3 & Solidity Mastery Platform")
 
 This folder contains our submission for the Avalanche **Build Games Hackathon**. It outlines the project idea for a gamified Web3 and Solidity mastery platform, detailing the concept, design, and implementation plan as part of the hackathon entry.
 
