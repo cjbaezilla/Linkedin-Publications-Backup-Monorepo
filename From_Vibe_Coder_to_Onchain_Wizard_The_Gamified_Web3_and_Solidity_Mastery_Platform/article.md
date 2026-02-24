@@ -1,6 +1,6 @@
 # Vibe2Wizard: From Vibe Coder to Onchain Wizard: The Gamified Web3 & Solidity Mastery Platform
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rZDsbkWI6hM" frameborder="0" allowfullscreen></iframe>
+- Video Pitch: http://www.youtube.com/watch?v=rZDsbkWI6hM
 ---
 
 ## How I Learned About Web3 (And Why It Should Be Easier)
