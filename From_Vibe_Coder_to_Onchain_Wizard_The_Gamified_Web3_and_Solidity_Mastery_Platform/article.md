@@ -1006,7 +1006,7 @@ This is the moment to build it.
 ## Learn More
 
 - LinkedIn announcement: https://www.linkedin.com/posts/carlos-baeza-negroni_web3-avalanche-buildgameshackathon-activity-7432039151312490497-MqSg
-- Read the article directly on LinkedIn: https://www.linkedin.com/pulse/
+- Read the article directly on LinkedIn: https://www.linkedin.com/pulse/vibe2wizard-from-vibe-coder-onchain-wizard-gamified-baeza-negroni-bdjpf
 - X Announcement: https://x.com/twitter/status/2026100769439600736
 - Video Pitch: https://www.youtube.com/watch?v=rZDsbkWI6hM
 - Project Repository: https://github.com/cjbaezilla/Avalanche-Build-Games-Hackathon-Monorepo
