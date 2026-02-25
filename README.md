@@ -15,3 +15,5 @@ https://www.linkedin.com/in/carlos-baeza-negroni/
 - **[Understanding AI Agent Skills: A Comprehensive Guide](./Understanding_AI_Agent_Skills_A_Comprehensive_Guide)** — A deep dive into what makes AI agents work, including their core capabilities, training methods, and real-world applications.
 
 - **[From Vibe Coder to Onchain Wizard: The Gamified Web3 and Solidity Mastery Platform](./From_Vibe_Coder_to_Onchain_Wizard_The_Gamified_Web3_and_Solidity_Mastery_Platform)** — Traces my journey building a gamified learning platform for Web3 and Solidity to participate in Avalanche's "Build Games" Hackathon, sharing lessons learned and technical challenges along the way.
+
+- **[The Complete Handbook to Ethereum Improvement Proposals (EIPs/ERCs)](./The_Complete_Handbook_to_Ethereum_Improvement_Proposals_(EIPsERCs))** — An in-depth guide covering what EIPs and ERCs are, how proposals are written, reviewed, and implemented, and how they shape Ethereum's protocol and ecosystem.
