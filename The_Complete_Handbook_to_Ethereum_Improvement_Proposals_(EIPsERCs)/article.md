@@ -1,5 +1,7 @@
 # The Complete Handbook to Ethereum Improvement Proposals (EIPs/ERCs)
 
+![Figure 1: Ethereum Improvement Proposals - The Complete Handbook](./1.jpg)
+
 ## Executive Summary
 
 Ethereum Improvement Proposals (EIPs) form the backbone of how Ethereum evolves as a protocol. Whether you're a developer building smart contracts, a researcher exploring consensus mechanisms, or simply curious about how a decentralized blockchain makes technical decisions, understanding EIPs is essential.
@@ -70,6 +72,7 @@ This section covers the core concepts: the distinction between EIPs and ERCs, th
 
 We address questions like what makes something an EIP versus an ERC, how proposals connect to hard forks, and what the relationship is between these proposals and the broader Ethereum roadmap.
 
+![Figure 2: EIP Fundamentals - Core Concepts and Categories](./2.jpg)
 ---
 
 ## 2. The Proposal Process
@@ -206,6 +209,7 @@ Major testnets like Sepolia and Holesky (or the older Goerli and Ropsten) serve 
 
 For ERCs, testnets matter less since there's no protocol-level change to test. But developers building applications that use new ERC standards still thoroughly test on testnets to ensure their implementations work correctly before deploying to mainnet.
 
+![Figure 3: The EIP Proposal Process - From Idea to Implementation](./3.jpg)
 ---
 
 ## 3. Discussion and Governance
@@ -362,6 +366,7 @@ There's also the case of one EIP replacing another. Sometimes an author will exp
 
 The honest truth is that having multiple competing proposals isn't necessarily a problem—it's often a sign of healthy interest in an important area. The community benefits from exploring multiple approaches, and the best ideas tend to emerge from that competition naturally.
 
+![Figure 4: EIP Discussion and Governance - Community Consensus](./4.jpg)
 ---
 
 ## 4. Understanding EIP Statuses
@@ -440,6 +445,7 @@ Once you're the champion, you update the EIP to reflect current thinking, addres
 
 This mechanism ensures that good ideas don't die just because their original proponent moved on. The EIP process is designed around the principle that what matters is the proposal itself, not who submitted it.
 
+![Figure 5: Understanding EIP Statuses - The Status Journey](./5.jpg)
 ---
 
 ## 5. Technical Implementation
@@ -508,6 +514,7 @@ The EIP format allows you to specify requires and required-by fields in the YAML
 
 Why does this matter? It helps the community understand the relationship between proposals and coordinate their development. When multiple EIPs have interdependencies, understanding those relationships helps everyone involved prioritize work and understand what needs to happen in what order. It also helps editors and reviewers assess whether a proposal is ready to move forward—if it depends on another EIP that's still in early Draft status, that might affect timing expectations.
 
+![Figure 6: Technical Implementation - From Specification to Code](./6.jpg)
 ---
 
 ## 6. ERC Standards Explained
