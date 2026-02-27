@@ -1,5 +1,7 @@
 # Building Your Own Web AI Assistant: A Complete Hands-On Guide with CodeIgniter4, Next.js, and OpenRouter
 
+![Cover](./1.jpg)
+
 ## Executive Summary
 
 This comprehensive guide walks you through building a fully functional AI-powered chat assistant from scratch. The project combines the robust backend capabilities of CodeIgniter 4, a modern PHP framework that has powered web applications for nearly two decades, with the cutting-edge frontend features of Next.js 16, all connected to OpenRouter's powerful AI API infrastructure.
@@ -9,6 +11,8 @@ What makes this project special is its simplicity paired with enterprise-grade a
 By the end of this guide, you'll have a complete working AI chat application that you can run locally, customize to your needs, and deploy to production. Whether you're a beginner looking to learn modern web development or an experienced developer wanting to understand how these technologies integrate, this hands-on project delivers real value. You'll walk away with working code, a solid understanding of how the pieces fit together, and plenty of ideas for extending the system in directions that interest you most.
 
 Ready to see it in action? Head over to the live working example at [GitHub Repository](https://github.com/cjbaezilla/Building-Your-First-Web-AI-Assistant-Hands-On-Tutorial) and explore the code as you work through the guide. It's a great way to get oriented before diving in.
+
+![Usage](./usage.jpg)
 
 ## Project Overview
 
@@ -21,6 +25,8 @@ At its core, the application allows users to send text prompts to an AI model an
 The system handles the complete conversation lifecycle with grace and reliability. It receives user input and validates that something meaningful was provided. It securely transmits the request to OpenRouter's API, protecting your API keys from ever reaching the browser. It processes the AI's response, handling various response formats that different models might return. Finally, it presents everything beautifully in the chat interface, where Markdown rendering ensures that AI responses with code blocks, lists, and formatting display correctly.
 
 What you're building here isn't just a toy. It's the foundation for something much bigger. Think of it as your launchpad for exploring AI-powered features in future projects.
+
+![Chat](./chat.jpg)
 
 ### Technology Stack
 
@@ -47,6 +53,8 @@ OpenRouter serves as the AI gateway, providing access to hundreds of AI models f
 
 Each technology in this stack has been carefully chosen to work together seamlessly. You get a backend that's lightweight yet powerful, a frontend that's modern and responsive, and an AI integration that gives you flexibility for the future.
 
+![Architecture Deep Dive](./2.jpg)
+
 ## Architecture Deep Dive
 
 Understanding the architecture helps you appreciate why the system works the way it does and makes future modifications intuitive. You'll find that once you understand the flow, extending the system becomes surprisingly straightforward.
@@ -70,6 +78,8 @@ Next.js receives this request at `app/api/chat/route.ts` and extracts the body. 
 The CodeIgniter controller receives the request, checks for the OpenRouter API key in environment variables (failing gracefully if it's missing), constructs the proper OpenRouter API payload following their expected format, and uses Guzzle HTTP client to send the request to OpenRouter's servers. The AI processes the prompt and returns a response, which the controller captures and returns as JSON to Next.js. This whole exchange typically happens in just a few seconds, depending on the model and your network speed.
 
 When Next.js receives the response from CodeIgniter, it passes it back to the original caller without modification. The React component receives this response, extracts the text content, and updates the message state to display the AI's reply beautifully. The entire cycle completes seamlessly, and your user sees their conversation flowing naturally.
+
+![Server-Side: CodeIgniter 4](./3.jpg)
 
 ## Server-Side: CodeIgniter 4
 
@@ -291,6 +301,8 @@ The primary endpoint is `POST /api/chat`, which accepts a JSON body with a `prom
 
 The second endpoint is `OPTIONS /api/chat`, which handles CORS preflight requests. Browsers automatically send this before making POST requests from JavaScript to verify the server accepts cross-origin requests. It's a quick check-in that happens before the real conversation starts. It returns an empty response with appropriate CORS headers and a 200 status code.
 
+![Client-Side: Next.js 16 with App Router](./4.jpg)
+
 ## Client-Side: Next.js 16 with App Router
 
 The frontend application in the `client` directory provides the user interface for interacting with the AI assistant. Built with Next.js 16 and the App Router, it demonstrates modern React development patterns with server components, API routes, and client-side interactivity. The result is a snappy, responsive application that users love interacting with.
@@ -355,8 +367,6 @@ The `lib` directory holds utility code that your components use. The `api.ts` fi
 The `public` directory contains static assets like images, fonts, and SVG files that the browser can load directly without any processing. These are the unchanging pieces of your application.
 
 The configuration files in the root include `package.json` defining dependencies and scripts, `next.config.ts` for Next.js configuration, `tsconfig.json` for TypeScript settings, and environment variable files. These files are your project's foundation.
-
-### Key Frontend Files
 
 ### Key Frontend Files
 
@@ -575,6 +585,8 @@ Tailwind's utility classes appear throughout the components. For example, `flex`
 
 Tailwind's responsive prefixes let you design for different screen sizes elegantly. Classes like `sm:items-start` apply different styles at the small breakpoint, while base classes apply to all sizes. Building responsive layouts becomes almost effortless.
 
+![Environment Variables and Configuration](./5.jpg)
+
 ## Environment Variables and Configuration
 
 Environment variables are critical to the application's functionality, storing sensitive information and configuration that changes between environments. Getting these right from the start makes your development workflow much smoother.
@@ -626,6 +638,8 @@ Your `.env` files contain secrets that must be protected absolutely. Never commi
 In production, you set environment variables through your hosting provider's dashboard rather than using .env files. Most hosting platforms provide a secure way to configure environment variables that won't be accidentally committed. Services like Vercel, Heroku, and AWS all handle this elegantly.
 
 When deploying, ensure your OpenRouter API key remains private. If someone obtains your key, they could use your API quota at your expense. Rotate your keys periodically and use the key with the minimum required permissions. These small security habits pay off in the long run.
+
+![Installation and Setup](./6.jpg)
 
 ## Installation and Setup
 
@@ -734,6 +748,8 @@ Type a message like "Hello, how are you?" and press Send or click the button. Af
 
 If you encounter errors, check both terminal windows for error messages. Common issues include the backend not running, an invalid API key, or network connectivity problems. Every problem has a solution, and the error messages will guide you toward it.
 
+![Understanding How the Code Works Together](./7.jpg)
+
 ## Understanding How the Code Works Together
 
 Let's take a deeper look at how the frontend and backend communicate, making troubleshooting easier and enabling customization. Understanding this flow gives you power over your application.
@@ -783,6 +799,8 @@ In the frontend API library, network errors are caught and converted to user-fri
 API errors (non-2xx status codes) result in the response's error field being extracted and thrown as an exception. The chat component catches these and displays them in an error banner, allowing the user to see what happened and try again.
 
 The backend catches exceptions from Guzzle and returns them as JSON errors with a 500 status code. This includes connection failures, API errors, and timeouts. The response includes the exception message for debugging, though in production you might want to mask specific error details for security.
+
+![Production Deployment](./8.jpg)
 
 ## Production Deployment
 
@@ -905,6 +923,8 @@ You'll need to ensure the backend routes don't conflict with frontend routes. On
 
 If you encounter issues with page refreshes showing 404 errors, make sure the `.htaccess` file properly handles client-side routing. Next.js static exports generate an `index.html` for each folder, which typically works with default Apache configurations.
 
+![Customization and Extension](./9.jpg)
+
 ## Customization and Extension
 
 Now that you understand the base system, you can extend it in many directions to add features and improve functionality. The architecture supports your ambitions.
@@ -925,6 +945,8 @@ Now that you understand the base system, you can extend it in many directions to
 ### Changing the AI Model
 
 The current implementation uses the nvidia/nemotron-3-nano-30b-a3b model, but OpenRouter offers hundreds of models with different capabilities, pricing, and performance characteristics. Finding the right model for your use case is part of the fun.
+
+![Models](./models.jpg)
 
 To use a different model, modify the `model` field in the OpenRouter controller's `$payload` array. For example, to use Anthropic's Claude:
 
