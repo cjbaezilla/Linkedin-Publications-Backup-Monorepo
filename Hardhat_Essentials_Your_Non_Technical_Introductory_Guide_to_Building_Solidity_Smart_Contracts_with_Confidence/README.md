@@ -6,8 +6,8 @@ This folder contains a comprehensive guide to building Solidity smart contracts 
 
 Feel free to check out the full content in four ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_ethereum-solidity-smartcontracts-activity-7434251096681996288-fi7x
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/hardhat-essentials-your-non-technical-introductory-baeza-negroni-xutff
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2028488553420800082
 4. 🔍 **Browse the source**:
    [article.md](./article.md)
