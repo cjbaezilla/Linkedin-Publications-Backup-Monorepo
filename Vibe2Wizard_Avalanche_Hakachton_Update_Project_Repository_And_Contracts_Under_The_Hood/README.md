@@ -6,9 +6,9 @@ This folder contains a comprehensive technical deep-dive into the Vibe2Wizard pr
 
 Feel free to check out the full content in five ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_avalanchebuildgames-hackathon-vibe2wizard-activity-7437125632595124226-FeQJ
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/vibe2wizard-avalanche-hakachton-update-project-under-baeza-negroni-wqtgf
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2031362245859459129
 4. 🧩 **Project Repository**: https://github.com/cjbaezilla/Avalanche-Build-Games-Hackathon-Monorepo
 5. 🔍 **Browse the source**:
    [article.md](./article.md)
