@@ -8,9 +8,9 @@ This folder contains a comprehensive guide to building a fully functional decent
 
 Feel free to check out the full content in five ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_dao-web3-ethereum-activity-7437461284335509504-b4AJ
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/building-decentralized-autonomous-organization-guide-baeza-negroni-nb6ve
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2031698466359939418
 4. 🧩 **Project Repository**: https://github.com/cjbaezilla/Your-First-DAO-Solidity-Token-OpenZeppelin-Tally-Tutorial
 5. 🔍 **Browse the source**:
    [article.md](./article.md)
