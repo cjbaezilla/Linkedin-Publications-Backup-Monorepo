@@ -4,9 +4,9 @@ This folder contains a hands-on guide to building a DeFi staking application on 
 
 Feel free to check out the full content in four ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_staking-erc4626-erc20-activity-7438194156272959488-LK9B
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/build-your-first-defi-staking-dapp-ethereum-hands-on-baeza-negroni-46wyf
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2032432576363712548
 4. 🧩 **Project Repository**: https://github.com/cjbaezilla/Build-Your-First-Solidity-ERC20-Staking-Contract-Tutorial
 5. 🔍 **Browse the source**:
    [article.md](./article.md)

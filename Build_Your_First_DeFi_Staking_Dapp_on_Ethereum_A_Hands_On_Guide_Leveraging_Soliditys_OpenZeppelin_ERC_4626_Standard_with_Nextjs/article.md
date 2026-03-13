@@ -206,11 +206,11 @@ Inheritance in Solidity works similarly to classes in other programming language
 ### The Setup Function: Constructor
 
 ```solidity
-    constructor(
-        IERC20 asset_,
-        string memory name_,
-        string memory symbol_
-    ) ERC4626(asset_) ERC20(name_, symbol_) {}
+constructor(
+    IERC20 asset_,
+    string memory name_,
+    string memory symbol_
+) ERC4626(asset_) ERC20(name_, symbol_) {}
 ```
 
 The `constructor` is a special function that executes exactly once when the contract is deployed to the blockchain. Think of it as the "initialization" or "setup" routine that configures the contract for operation.
@@ -225,9 +225,9 @@ The syntax `ERC4626(asset_) ERC20(name_, symbol_)` calls the constructors of the
 ### The Security Heart: Decimals Offset
 
 ```solidity
-    function _decimalsOffset() internal view virtual override returns (uint8) {
-        return 3;
-    }
+function _decimalsOffset() internal view virtual override returns (uint8) {
+    return 3;
+}
 ```
 
 This small function is the critical security customization that protects against inflation attacks. Let me break down each keyword:
