@@ -1,6 +1,6 @@
 # OpenCode Agents Fundamentals: Create, Configure, Deploy Custom Agents and Automated Workflows
 
----
+![Cover](./1.jpg)
 
 ## What Is OpenCode?
 
@@ -9,8 +9,6 @@ Let us start with the absolute fundamentals. OpenCode is a coding assistant that
 Imagine you are renovating a house. You would not rely on just one person for everything. You would need an architect to plan the work and create blueprints. You would need electricians and plumbers for specialized technical tasks. You would need a general contractor who actually builds and coordinates the work. You would need an inspector to check the work quality and ensure everything meets code. OpenCode agents are exactly like that team. Each agent has a specific role, particular expertise, and a dedicated set of tools they can use. This guide will help you understand how to use the agents that come with OpenCode right out of the box, and more importantly, how to create your own custom agents when you need specialized help that goes beyond the built-in options.
 
 The key insight that makes OpenCode so effective is this: one-size-fits-all AI help is okay, but having a team of specialists is much more powerful for getting consistent, high-quality results that match your specific needs. When you work with a specialized agent that has been given precise instructions and only the tools it needs, you get focused, reliable assistance that understands the nuances of its particular domain.
-
----
 
 ## Understanding the Basics: Models, AI Assistants, and Providers
 
@@ -45,7 +43,7 @@ The practical takeaway is this: when you're creating an agent, focus on the agen
 
 ### What Is an AI Coding Assistant?
 
-An AI coding assistant is a software tool that uses artificial intelligence to help you write, understand, modify, and debug code. Instead of having to figure everything out on your own or search through endless documentation, you have a knowledgeable partner that can assist with programming tasks in natural language. You describe what you want in plain English (or your native language), and the AI helps make it happen.
+An AI coding assistant is a software tool that uses artificial intelligence to help you write, understand, modify, and debug code. Instead of having to figure everything out on your own or search through endless documentation, you have a knowledgeable partner that can assist with programming tasks in natural language. You describe what you want in natural language, and the AI helps make it happen.
 
 OpenCode is a specific type of AI coding assistant that works directly inside your text editor. But to understand what makes it special, let's first understand what AI coding assistants do in general.
 
@@ -87,7 +85,7 @@ The common providers you'll encounter are Anthropic (claude models), OpenAI (GPT
 
 In practice, you don't need to worry too much about the provider distinction once you've connected your API keys. You just specify the model in the format provider/model-id, and OpenCode handles the rest. But understanding providers helps you make informed choices about which models to use for which agents, helps you understand your costs and how they're calculated, and helps you troubleshoot when something doesn't work (like using a model from a provider you haven't connected).
 
----
+![Your First 10 Minutes with OpenCode Agents](./2.jpg)
 
 ## Your First 10 Minutes with OpenCode Agents
 
@@ -101,7 +99,7 @@ Press Tab once more to go back to the build agent. Type: "Make the changes that 
 
 That simple back-and-forth is the core workflow of OpenCode agents. You now understand 80% of how agents work in practice. The build agent does the actual work of creating and modifying code. The plan agent reviews the work and provides analysis and suggestions. You switch between them using the Tab key. Do not worry about everything else in this document yet. Come back to it after you have completed those steps and want to learn more about the full capabilities.
 
----
+![Part 1: Understanding the Built-In Agent Team](./3.jpg)
 
 ## Part 1: Understanding the Built-In Agent Team
 
@@ -125,7 +123,7 @@ The explore agent is your detective and codebase navigator. It searches through 
 
 The general agent is your researcher who conducts deeper investigations requiring multiple steps and information gathering. Its specialty is multi-step research, synthesizing information from multiple places, and answering complex questions that require investigation rather than simple file operations. You use it when you need to know best practices for a particular technology, when you need to understand how other teams in your codebase handle a certain problem, or when you need to research and compare different approaches to a technical challenge. For example, you might ask @general what are the standard approaches for file upload validation in web applications or @general research database connection pooling strategies and tell me which one works best for high-traffic sites. The general agent will conduct a thorough investigation and come back with synthesized findings.
 
----
+![Part 2: How Agent Communication Actually Works](./4.jpg)
 
 ## Part 2: How Agent Communication Actually Works
 
@@ -141,7 +139,7 @@ When you call a subagent, several things happen in sequence. First, you type som
 
 Sometimes you do not even need to manually call subagents. The system can automatically invoke them when it determines that a specialist would be helpful. If you ask build "where is the login code?" the build agent might automatically call explore because finding things in the codebase is explore's specialty and it makes sense to delegate that part of the request. You will usually see a message indicating that this happened. Do not fight this automatic behavior - let the system do its job. But if you want more explicit control, manually specify @explore to ensure the right agent handles that part of the task and you know exactly what is happening.
 
----
+![Part 3: Should You Create a Custom Agent?](./5.jpg)
 
 ## Part 3: Should You Create a Custom Agent?
 
@@ -151,7 +149,7 @@ Create a custom agent only when you notice a clear pattern in your work: you fin
 
 There are specific signs that indicate you actually need a custom agent. Create a custom agent when you find yourself repeatedly doing these things: always asking for security reviews and wanting consistent security-focused results (this suggests a security auditor agent), frequently writing documentation in a specific format (this suggests a documentation writer agent), running the same quality checks before every commit (this suggests a quality gatekeeper agent), checking if your code follows your team's style guide repeatedly (this suggests a style enforcer agent), or always optimizing for performance and wanting systematic performance analysis (this suggests a performance tuner agent). If it is a one-time question or a task you do only once, just ask directly. Custom agents are for recurring needs where you want consistency and specialization. They save you time in the long run by codifying your expertise and requirements into a dedicated assistant.
 
----
+![Part 4: Creating Your First Custom Agent](./6.jpg)
 
 ## Part 4: Creating Your First Custom Agent
 
@@ -169,7 +167,7 @@ The fifth question asks you to select tools. Tools are the actions your agent ca
 
 The wizard creates the configuration file in the correct location automatically based on your answers. This prevents formatting errors and placement mistakes that commonly happen when creating configuration files by hand. Start with the wizard - it is the reliable way to create your first agent.
 
----
+![Part 5: Understanding Agent Configuration Files](./7.jpg)
 
 ## Part 5: Understanding Agent Configuration Files
 
@@ -306,9 +304,7 @@ If you do choose JSON, be meticulous about syntax. Use a JSON validator if you'r
 
 Regardless of format, use the wizard to create your first agents. The wizard handles the formatting details correctly and places files in the right locations. You can then edit the generated files, confident that the structure is correct. Once you understand the format, you can edit by hand with confidence.
 
----
-
-## Your First 10 Minutes with OpenCode Agents
+### Configuration File Formats
 
 The first option is JSON format, where you put all your agent definitions in a single opencode.json file using JSON syntax with curly braces, quotes, and commas. In this format, you might have a JSON object that contains an agent key, and under that you define your custom agent with its properties. The JSON looks something like this:
 
@@ -403,8 +399,6 @@ Always provide a CWE or OWASP reference when applicable.
 ```
 
 You would use Markdown format if you want human-readable files that you can open and understand at a glance, if you have many custom agents and want them organized separately in their own files, if you want to write detailed prompts with formatting like headings and lists (which you can do in Markdown), or if you prefer editing agent instructions in a natural way without worrying about JSON syntax. The downside is more files to manage, though that rarely becomes a problem in practice. The good news is that you can mix both formats if you want. OpenCode loads agents from all sources and combines them. Start with one format that feels comfortable. You can always switch later if your needs change.
-
----
 
 ## Part 6: Agent Configuration Settings Explained
 
@@ -534,8 +528,6 @@ permission:
 
 You can get quite granular with permissions, specifying different levels for different commands. The built-in agents have sensible defaults: the build agent has most tools set to allow because it is your main worker and you trust it; the plan agent has modification tools set to ask because it is a reviewer and you want oversight on any changes it suggests.
 
----
-
 ### Other Useful Settings (Learn As Needed)
 
 #### The "Steps" Setting: Understanding Agent Thinking Cycles
@@ -586,8 +578,6 @@ The color setting sets the agent's color in the OpenCode interface. It helps you
 
 There are some settings you can safely ignore for now as a beginner. These include top_p, which is an alternative to temperature used by some providers - just use temperature instead. The additional field or pass-through options are provider-specific settings only for advanced use cases. Permission.task controls what subagents an agent can call and is part of advanced orchestration patterns. Hidden is used to hide subagents from the @-mention menu and is rarely needed. Disable set to true temporarily disables an agent without deleting it, but you usually do not need this.
 
----
-
 ## Part 7: Building a Real Custom Agent - Step by Step
 
 Let us create a documentation writer agent from start to finish. This concrete example will show you the complete workflow and how all the pieces fit together.
@@ -621,8 +611,6 @@ In OpenCode, type @doc-writer create a README.md for this project explaining wha
 ### Step 5: Refine Based on Results
 
 Your first prompt will not be perfect. That is expected and normal. Use the agent, see what it produces, then refine the prompt based on what you observe. If the output is too verbose and wordy, change temperature from 0.4 to 0.3 to make it more concise. If it is missing something important that you expected, add that requirement to the prompt instructions explicitly. If the tone is wrong - too casual or too formal - adjust the first paragraph where you define your principles and voice. If it is not following your desired format, be more explicit: "Your output MUST include these sections in this exact order: 1) Overview, 2) Installation, 3) Usage, 4) Configuration, 5) Contributing." Be specific about required structure. This iterative improvement is how you get a solid documentation agent. After two or three iterations of using it, seeing results, and refining the prompt, you will have an agent that consistently produces excellent documentation tailored to your project's needs.
-
----
 
 ## Part 8: Ready-to-Use Agent Examples
 
@@ -1040,8 +1028,6 @@ The configuration for this agent includes permission settings that allow safe co
 
 You use this agent with @quality-check followed by your request. For example: @quality-check run all the quality checks for this project or @quality-check should I commit these changes?
 
----
-
 ## Part 9: Advanced Topics (For Later)
 
 Once you are comfortable with the basics and have created a few custom agents, these advanced concepts will help you fine-tune your agent setup and have more control over how OpenCode behaves.
@@ -1126,11 +1112,9 @@ If you use local models through Ollama or LM Studio, or if you have a company-in
 
 The permission.task setting controls which subagents an agent can invoke on its own through the Task tool. This is about orchestration: what other agents can this agent call autonomously when it decides it needs help? You might create a manager agent that only calls your vetted custom agents and does not call arbitrary subagents that users might @-mention. The configuration looks like this: permission.task with a default of deny for all, then allow for agents whose names match certain patterns, and ask for specific agents. This means your agent cannot invoke any subagent by default. It can automatically invoke subagents whose names start with orchestrator- without asking. And it can invoke the code-reviewer but must ask you first. This is useful for creating hierarchies of agents where a manager oversees what specialist subagents can be used. Important: this restricts what the agent does autonomously based on its own decisions. It does not restrict what users can do manually. Users can always manually @-mention any agent that exists. Task permissions only restrict the agent's autonomous decisions when it is trying to accomplish something on its own.
 
----
+## Part 10: Troubleshooting - Common Language Solutions
 
-## Part 10: Troubleshooting - Plain English Solutions
-
-This section provides solutions to common problems you might encounter when working with OpenCode agents. Each problem is stated clearly, followed by a checklist of things to verify in plain language.
+This section provides solutions to common problems you might encounter when working with OpenCode agents. Each problem is stated clearly, followed by a checklist of things to verify in common language.
 
 ### I Created an Agent but It Does Not Appear Anywhere
 
@@ -1167,8 +1151,6 @@ The command is opencode config show. This displays the fully merged configuratio
 ### Agent Behaves Unexpectedly or Gives Poor Results
 
 Here is a quick checklist to run through when an agent is not performing as you hope. First, is the temperature too high? Try lowering it into the 0.3 to 0.5 range. Second, is the prompt unclear? Rewrite it with more specific instructions and examples of desired output. Third, is the wrong model being used? Try a different model - Haiku for speed, Sonnet for balanced capability, Opus for complex reasoning. Fourth, are there too few or too many steps? Adjust the steps setting if the agent stops too early or goes on too long without producing results. Fifth, are tools inappropriate? Review the tools and permission settings - maybe the agent lacks tools it needs to do the job, or has tools that distract it from its main purpose. Sixth, try a different prompt approach - be more explicit about required output format, add concrete examples in the prompt, include do not statements about what to avoid. A few iterations of prompt refinement often dramatically improve agent performance.
-
----
 
 ## Part 11: Quick Reference
 
@@ -1237,21 +1219,15 @@ Always be [adjective] and [adjective].
 
 Replace the bracketed sections with your specific requirements. This template gives you a safe, minimal agent that you can then customize for your specific needs.
 
----
-
 ## Part 12: Built-In Agent Summary
 
 Let us summarize the seven built-in agents that come with OpenCode. The build agent is primary, your main coding assistant, used by just asking since it is the default. The plan agent is primary, used for analysis and review (it does not make changes unless you explicitly ask), and you access it by pressing Tab until you see plan. The general agent is a subagent for deep research on complex topics, invoked with @general. The explore agent is a subagent for finding things in the codebase, invoked with @explore. The compaction agent is hidden and automatic - it summarizes old conversations to manage context. The title agent is hidden and automatic - it generates session titles. The summary agent is hidden but accessible with the /summary command to create session summaries.
-
----
 
 ## Conclusion
 
 OpenCode agents let you build a specialized AI team for your coding workflow. Start simple by using the built-in build and plan agents. Switch between them with Tab. Call specialists like @explore when you need their particular skills. Create custom agents only when you notice a recurring need for specialized help that is not covered by the built-in options. Focus on three key settings that matter most: temperature for controlling predictability versus creativity, tools for defining what the agent can do, and permission for determining when the agent needs your approval. Remember that the prompt is the single most important setting - a clear, specific, well-structured prompt on a mid-tier model will outperform a vague prompt on the most expensive model. Iterate: your first agent configuration will not be perfect. Use it, observe the results, refine the prompt. After two or three iterations you will have it dialed in. Stay safe by using ask permissions for destructive operations and by giving agents only the tools they truly need - do not enable write for reviewers. And do not overcomplicate - start with one project-specific agent in Markdown format. Add more agents as needs emerge. Use opencode config show to understand what is actually configured and to debug issues.
 
 You now have everything you need to effectively use and customize OpenCode agents. Start with the 10-minute hands-on exercise at the beginning of this guide, then explore further as your needs grow. Happy coding.
-
----
 
 ## Appendix
 
@@ -1262,8 +1238,6 @@ You now have everything you need to effectively use and customize OpenCode agent
 ### Further Reading
 
 OpenCode's official documentation covers these additional topics in detail. The configuration schema is a complete reference for all available configuration options and their exact syntax. The providers documentation explains how to set up API connections for different AI services and how to add custom providers. The models guide helps you understand available models, their characteristics, capabilities, and pricing. The permissions system guide provides detailed explanation of permission syntax and common patterns for safe agent configurations. The tools reference lists all available tools and what they do, including any advanced options. The MCP integration documentation explains how agents use the Model Context Protocol to connect to additional tool servers. The troubleshooting guide covers general OpenCode help and common issues beyond agent-specific problems.
-
----
 
 **Document version**: 2.0 (Beginner-friendly, restructured)
 **Last updated**: 2025-03-14
