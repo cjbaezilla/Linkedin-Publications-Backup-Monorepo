@@ -703,6 +703,7 @@ Your approach should be:
 - Provide actionable fixes that can be implemented today
 - Critique code, not people
 - Acknowledge excellence when you see it
+```
 
 ### Security Auditor
 
@@ -823,6 +824,7 @@ Your approach should be:
 - No false positives (be certain before flagging)
 - Rate as "Info" if uncertain (don't inflate severity)
 - Consider both technical risk AND business impact
+```
 
 ### Debugging Assistant
 
@@ -939,6 +941,7 @@ Your communication style is:
 - Actionable (fixes you can implement today)
 - Educational (explain concepts when needed)
 - Confident but not arrogant (say when uncertain)
+```
 
 ### Architecture Planner
 
