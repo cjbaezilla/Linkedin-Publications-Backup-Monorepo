@@ -1,5 +1,7 @@
 # DEX and AMM Foundations: A Beginner's Introduction to Decentralized Exchanges and Automated Market Making on Ethereum
 
+![Cover](./1.jpg)
+
 Have you ever stood in line at the bank to send money to a family member in another country, only to be told it will take days and cost a small fortune? Or perhaps you've watched as your paycheck sits in a savings account earning practically nothing, while banks lend that same money to others at much higher interest rates? These everyday frustrations reveal a fundamental truth about our current financial system: it's built on middlemen. Banks, brokers, payment processors, and clearinghouses all take a cut, adding fees, slowing things down, and deciding who gets access and who doesn't. What if there were a way to trade value directly between people, without asking permission, without waiting for business hours, and without all those fees eating into your money? That's not science fiction. It's already happening, and it's called decentralized finance, or DeFi for short. In this guide, we're going to explore the beating heart of this new world: decentralized exchanges and their revolutionary pricing engine, the automated market maker.
 
 Before we go any further, let me assure you of something crucial: this guide is written for absolutely everyone. Whether you've never opened a stock account or you've been investing for decades, whether you're comfortable with technology or get nervous just opening your email, you can understand this. We're going to start from zero, like explaining how a light switch works before building a house. No technical background required. No prior knowledge of cryptocurrency assumed. We'll use ordinary language, everyday analogies, and step-by-step explanations that build on themselves. By the time we're done, you'll not only understand what these terms mean. You'll see why they matter and how they could change the way we think about money itself.
@@ -26,6 +28,8 @@ I want to address something you might be feeling right now: maybe a sense of int
 
 One more thing before we begin. This guide will not promise you fortunes or try to sell you on any particular cryptocurrency. It's an educational tool, not investment advice. The DeFi space is still young and carries real risks: smart contract bugs, market volatility, regulatory uncertainty, and irrecoverable human error. You should never put in more than you can afford to lose. But if you approach it with clear eyes, solid security habits, and a learning mindset, you can participate safely and understand what's happening. Knowledge is your best protection. So take a deep breath, set aside any intimidation, and let's start at the very beginning, with the oldest question of all: what is money, really? You've got this.
 
+![Part 1: Foundations: Everything You Need Before Understanding DEXs](./2.jpg)
+
 ## Part 1: Foundations: Everything You Need Before Understanding DEXs
 
 ## What is Money, Really? Setting the Stage
@@ -39,6 +43,8 @@ The first solution was to use something universally desirable as an intermediary
 Later, societies realized that carrying around heavy gold was inconvenient. So they created paper certificates that represented gold stored in a vault. The paper itself was worthless, but everyone trusted that they could exchange it for real gold. Eventually, most countries abandoned the gold standard, and today the paper bills we use aren't backed by anything physical. Their value comes entirely from our collective belief and the government's declaration that they are legal tender. That's a powerful idea: money is a social construct, a story we all agree to believe.
 
 Now we're in the digital age. Most of our money today isn't even paper; it's numbers in a bank's computer. When you check your account balance online, you're seeing a database entry. You can't touch that money. You can't see it. You're trusting that the bank's database is accurate and that the bank will honor it when you want to withdraw cash or send money to someone. This brings us to the next step in money's evolution: digital currency that doesn't require a bank as an intermediary.
+
+![What is Cryptocurrency?](./3.jpg)
 
 ## What is Cryptocurrency?
 
@@ -76,6 +82,8 @@ The computers that maintain the blockchain are called nodes. Some are run by vol
 
 Why does this matter? Because it means no single entity controls the ledger. A government can't just erase your balance. A bank can't freeze your account because it disagrees with your politics. The rules are encoded in the software and enforced by the network. This creates a form of money that is censorship-resistant, transparent (anyone can view the entire history), and secure against tampering. Of course, this also means there's no buyer protection or customer service (if you send cryptocurrency to the wrong address, there's no one to reverse it). But for many people, the trade-off is worth it for the freedom and control.
 
+![What is Ethereum?](./4.jpg)
+
 ## What is Ethereum?
 
 When Bitcoin was created, it was designed primarily as a digital currency (a way to send value from one person to another without a bank). The Bitcoin blockchain is excellent at tracking who owns how many bitcoins. But it's not designed to do much else. It's like a ledger that only knows about one thing: bitcoin transactions.
@@ -109,6 +117,8 @@ However, there are important caveats. Smart contracts are only as good as the co
 **Real-World Example: DeFi Lending Without a Bank**
 
 Let's make this concrete with a real DeFi scenario. Imagine you own $5,000 worth of ETH but you need $2,000 in cash for an emergency. You don't want to sell your ETH because you believe its price will go up. In traditional finance, you'd go to a bank, apply for a loan, fill out paperwork, and wait for approval (if you even qualify). With a smart contract-based lending protocol like Aave or Compound, you can do this in minutes: you deposit your $5,000 ETH as collateral into the smart contract. The contract automatically calculates that, given its collateral requirements, you can borrow up to $3,000 worth of stablecoins. You borrow $2,000 USDC. You now have cash, your ETH is still locked but belongs to you, and you'll pay interest on the loan. If the value of your ETH drops below a certain threshold, the smart contract will automatically sell some of your collateral to repay the loan, protecting the lender. No paperwork, no waiting, no one to ask permission from. The entire借贷过程 is handled by code that executes exactly as programmed.
+
+![What is a Wallet?](./5.jpg)
 
 ## What is a Wallet?
 
@@ -180,6 +190,8 @@ The calculation:
 
 The transaction fails. Carlos tried to sell too much relative to the pool's depth. In fact, if he had tried to sell the full 50,000 without slippage protection, he would have received only 4,539 USDC, a terrible price. Pools can be depleted: if someone tried to sell all 500,000 Token Y, the price would go to near zero. But the AMM prevents that by making the price approach zero only at extreme withdrawals. The slippage becomes infinite as you drain the pool. That's why deep liquidity is essential for large trades.
 
+![What is DeFi (Decentralized Finance)?](./6.jpg)
+
 ## What is DeFi (Decentralized Finance)?
 
 DeFi stands for Decentralized Finance. It's an umbrella term for financial services (lending, borrowing, trading, earning interest, buying insurance) that are built on blockchain technology and run by smart contracts instead of traditional institutions like banks, brokerages, or insurance companies. Think of it as a new financial system that operates parallel to the old one, but with different rules and no gatekeepers.
@@ -211,6 +223,8 @@ Here's an important decision: do you keep your crypto on the exchange, or do you
 To withdraw, you'll need to set up your MetaMask wallet first (we'll explain that process in the practical walkthrough). You'll get your wallet address (a long string starting with 0x). On the exchange, you go to the withdrawal section, select ETH, paste that address, and specify the amount. The exchange will send the ETH to your wallet on the Ethereum blockchain. There will be a network fee for this withdrawal (a separate fee from the purchase fee), and it can be anywhere from $5 to $50 depending on how busy the network is at that moment.
 
 Once the ETH arrives in your MetaMask wallet (it might take a few minutes), you're ready to use Uniswap. You now have your own crypto wallet with actual assets on the blockchain. You can also buy other cryptocurrencies on the exchange (like USDC or UNI) and withdraw them to your wallet to have a variety of tokens available for trading.
+
+![How to Actually Use Uniswap: A Practical Walkthrough](./7.jpg)
 
 ## How to Actually Use Uniswap: A Practical Walkthrough
 
