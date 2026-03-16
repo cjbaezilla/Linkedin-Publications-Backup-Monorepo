@@ -6,8 +6,8 @@ This folder contains a comprehensive beginner's guide to Decentralized Exchanges
 
 Feel free to check out the full content in four ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_decentralizedfinance-defi-dex-activity-7439413858135351296-S3Dp
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/dex-amm-foundations-beginners-introduction-exchanges-baeza-negroni-7jrzf
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2033650612387123511
 4. 🔍 **Browse the source**:
    [article.md](./article.md)
