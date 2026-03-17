@@ -1,5 +1,9 @@
 # Deconstructing Karpathy's Autoresearch: A Line-by-Line Guide to Autonomous AI Training with Practical Examples
 
+![Cover](./1.jpg)
+
+![progress](./progress.png)
+
 ## Introduction: What is Autoresearch?
 
 Imagine a research lab where the scientist never sleeps, never gets tired, and never stops experimenting. This scientist works with complete focus, running hundreds of experiments in a single night. Each experiment explores a different idea—a new neural network architecture, a tweaked hyperparameter, a different optimizer. When an experiment shows promise, the scientist keeps it and builds upon it. When it fails, the attempt is discarded and forgotten. By morning, the lab is filled with the evidence of a night of discovery: a clear path of improvements, tangible progress made, and a model that works better than it did before. This is not science fiction. This is what "autoresearch" means—an AI agent conducting autonomous research on itself, running experiments 24 hours a day and discovering improvements that even experienced human researchers might miss.
@@ -53,6 +57,8 @@ Consider education. Right now, many students use basic tutoring software that fo
 Even everyday products could become better and cheaper. Better AI means companies can design products with less waste, optimize delivery routes to save fuel, and offer more personalized services at lower cost. The impact is not about making smarter robots that walk around. It is about using technology to solve real human problems. Autonomous AI research is like giving scientists a tireless assistant who can also improve its own skills. That assistant could help us tackle some of the world's biggest challenges, from health to environment to education.
 
 This matters because it could dramatically speed up the pace of AI development. Powerful models that might have taken years to develop could arrive in months or weeks. It also democratizes research: small teams with limited resources can let AI agents do the tedious trial-and-error work that normally requires large, well-funded research labs. Today, this is possible because language models have become remarkably skilled at writing code and reasoning through problems. Open-source tools make experimentation accessible, and a single powerful computer (called a GPU) can run these experiments. This is part of a broader trend toward automation of scientific discovery, where AI does not just assist humans but actively conducts research. As we will see, the agent discovered real, tangible improvements that stacked together to produce an 11% better model. This is not a distant dream - it is happening right now.
+
+![The Big Picture: How Does It Work?](./2.jpg)
 
 ## The Big Picture: How Does It Work?
 

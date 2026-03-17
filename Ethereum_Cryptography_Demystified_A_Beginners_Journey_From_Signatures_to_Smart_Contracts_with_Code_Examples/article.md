@@ -1,5 +1,7 @@
 # Ethereum Cryptography Demystified: A Beginner's Journey From Signatures to Smart Contracts with Code Examples
 
+![Cover](./1.jpg)
+
 ## Introduction: Why Cryptography Matters in Ethereum
 
 Imagine you have a very special type of safe. This safe has a lock that only you can open, but there's also a unique window on the front that lets anyone look inside and see a public display. This is the basic idea behind cryptography. Cryptography is the science of creating mathematical locks and keys to protect information. It lets you prove you are who you say you are without ever having to share your secret.
