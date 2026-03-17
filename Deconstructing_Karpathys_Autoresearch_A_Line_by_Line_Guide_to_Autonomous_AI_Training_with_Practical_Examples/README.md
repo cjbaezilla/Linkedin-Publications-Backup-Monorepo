@@ -8,9 +8,9 @@ This folder contains a comprehensive beginner-friendly guide to Andrej Karpathy'
 
 Feel free to check out the full content in four ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_airesearch-autoresearch-karpathy-activity-7439700812118941698-fLB_
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/deconstructing-karpathys-autoresearch-line-by-line-ai-baeza-negroni-owgof
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2033939129554067781
 4. 🔍 **Browse the source**:
    [article.md](./article.md)
 
