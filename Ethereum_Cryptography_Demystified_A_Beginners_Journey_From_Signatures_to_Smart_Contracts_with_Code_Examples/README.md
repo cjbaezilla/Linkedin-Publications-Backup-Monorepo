@@ -6,8 +6,8 @@ This folder contains a comprehensive beginner's guide to cryptography in Ethereu
 
 Feel free to check out the full content in four ways:
 
-1. 📢 **LinkedIn announcement**: 
-2. 📖 **Read the article directly on LinkedIn**: 
-3. 🐦 **X/Twitter Announcement**: 
+1. 📢 **LinkedIn announcement**: https://www.linkedin.com/posts/carlos-baeza-negroni_ethereum-cryptography-web3-activity-7440081392912474112-9HWp
+2. 📖 **Read the article directly on LinkedIn**: https://www.linkedin.com/pulse/ethereum-cryptography-demystified-beginners-journey-baeza-negroni-tvtbf
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2034317099049324580
 4. 🔍 **Browse the source**:
    [article.md](./article.md)
