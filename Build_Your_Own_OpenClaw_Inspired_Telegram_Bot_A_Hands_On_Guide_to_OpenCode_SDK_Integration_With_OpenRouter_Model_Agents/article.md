@@ -1,6 +1,6 @@
 # Build Your Own OpenClaw-Inspired Telegram Bot: A Hands-On Guide to OpenCode SDK Integration With OpenRouter Model Agents
 
-![Cover](./1.jpg)
+![Cover](./2.jpg)
 
 ![telegram_file_modification](./telegram_file_modification.jpg)
 
@@ -18,7 +18,7 @@ Let us take a moment to understand why this matters in everyday terms. Many deve
 
 Furthermore, this integration demonstrates how different technologies can work together to solve real problems. You do not need to be an expert in networking, APIs, or artificial intelligence to use it. The goal of this guide is to demystify all of that and give you the confidence to not only use the bot but also modify it for your own needs. By the time you finish reading, you will understand each piece of the puzzle and how they fit together, and you will be able to troubleshoot issues, add new features, and deploy the bot in your own environment.
 
-![Getting Started with Practical Examples](./2.jpg)
+![Getting Started with Practical Examples](./1.jpg)
 
 ## Getting Started with Practical Examples
 

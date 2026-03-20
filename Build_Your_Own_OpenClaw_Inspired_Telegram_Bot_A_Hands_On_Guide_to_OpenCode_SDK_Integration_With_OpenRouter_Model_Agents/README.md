@@ -11,6 +11,6 @@ Feel free to check out the full content in five ways:
 1. 📢 **LinkedIn announcement**: 
 2. 📖 **Read the article directly on LinkedIn**: 
 3. 🐦 **X/Twitter Announcement**: 
-4. 🧩 **Project Repository**: 
+4. 🧩 **Project Repository**: https://github.com/cjbaezilla/Integrate-Opencode-SDK-With-Telegram-Bot-Hands-On-Tutorial
 5. 🔍 **Browse the source**:
    [article.md](./article.md)
