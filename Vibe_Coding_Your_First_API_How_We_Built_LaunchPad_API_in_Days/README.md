@@ -10,6 +10,7 @@ Feel free to check out the full content in three ways:
    https://www.linkedin.com/posts/carlos-baeza-negroni_vibecoding-apidevelopment-codeigniter4-activity-7429851365989912576-1O10
 2. 📰 **Read the article directly on LinkedIn**:
    https://www.linkedin.com/pulse/vibe-coding-your-first-api-how-we-built-launchpad-baeza-negroni-vjx3f
-3. 🔍 **Browse the source** here in the repo:
+3. 🐦 **X/Twitter Announcement**: https://x.com/cjbaezilla/status/2024087886153290179
+4. 🔍 **Browse the source** here in the repo:
    [article.md](./article.md)
 
